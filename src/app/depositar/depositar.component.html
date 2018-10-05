@@ -1,0 +1,8 @@
+<h1>Depositar</h1>
+<label>Selecciona receptor</label><br>
+<select id="name" [(ngModel)]="name">
+  <option *ngFor="let p of people" value="{{p.name}}">{{p.name}}</option>
+</select><br>
+<label>Amount</label>
+<input type="text" [(ngModel)]="amount" placeholder="Maximo" id="amount"><br>
+<button (click)="deposita()">Enviar</button>
